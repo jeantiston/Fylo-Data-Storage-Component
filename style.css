@@ -26,24 +26,42 @@ body {
 .main {
     display: flex;
     border: 5px solid red;
-    min-width: 500px;
-    flex-wrap: wrap;
+    min-width: 900px;
+    
+}
+
+
+
+.main > * {
+    border: 5px solid greenyellow;
 }
 
 header {
+    flex: 1 1 auto;
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 70px 10px 10px;
     padding: 30px 120px 30px 30px;
     margin: 10px;
-    max-width: 180px;
-    display: flex;
-    /* border: 5px solid red; */
-    flex-wrap: wrap;
+    
 }
 
-header > * {
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+}
+
+.header-content > * {
     flex: 1 1 auto;
-    /* border: 5px solid goldenrod; */
+}
+
+main {
+    flex: 1 1 500px;
+    border: 5px solid goldenrod;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
+    margin: 50px 10px 10px 10px;
 }
 
 .menu-icons {
@@ -63,17 +81,7 @@ header > * {
     justify-content: center;
 }
 
-main {
-    border: 5px solid goldenrod;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: 10px 10px 10px 10px;
-    padding: 30px 30px 30px 30px;
-    margin: 50px 10px 10px 10px;
-}
 
-main > * {
-    /* border: 5px solid red; */
-}
 
 .storage-empty {
     background-color: hsl(229, 57%, 11%);
@@ -108,3 +116,16 @@ main > * {
 footer {
     margin-top: auto;
 }
+@media all and (max-width:1000px) {
+    .main{
+        min-width: auto;
+        max-width: auto;
+        flex-wrap: wrap;
+    }
+
+    main {
+        margin-top: 10px;
+        
+    }
+  
+  }
