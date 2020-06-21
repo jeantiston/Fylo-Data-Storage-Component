@@ -1,0 +1,60 @@
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(229, 7%, 55%);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main {
+    display: flex;
+}
+
+header {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 70px 10px 10px;
+    padding: 30px 120px 30px 30px;
+    max-width: 180px;
+    margin: 10px;
+    display: flex;
+    /* border: 5px solid red; */
+    flex-wrap: wrap;
+}
+
+header > * {
+    flex: 1 1 auto;
+    /* border: 5px solid goldenrod; */
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 0 0 ;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: auto;
+}
