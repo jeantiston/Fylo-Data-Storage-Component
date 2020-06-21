@@ -25,16 +25,14 @@ body {
 
 .main {
     display: flex;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     min-width: 900px;
     
 }
 
 
 
-.main > * {
-    border: 5px solid greenyellow;
-}
+
 
 header {
     flex: 1 1 auto;
@@ -57,7 +55,7 @@ header {
 
 main {
     flex: 1 1 500px;
-    border: 5px solid goldenrod;
+    /* border: 5px solid goldenrod; */
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 10px 10px 10px;
     padding: 30px 30px 30px 30px;
@@ -83,7 +81,7 @@ main {
 
 .storage-bar {
     position: relative;
-    border: darkorange solid 5px;
+    /* border: darkorange solid 5px; */
 }
 
 .storage-empty {
@@ -100,39 +98,6 @@ main {
 .storage-empty:hover + .hide {
     display: block;
 }
-
-/* .storage-left{
-    background: none repeat scroll 0 0 #F8F8F8;
-    color: #717171;
-    font-size: 13px;
-    height: 50px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: -80px;
-    left:-30px;
-    display:block;
-    padding:0 20px;
-
-}
-.storage-left:after{
-    content:'';
-    position:absolute;
-    bottom:-10px;
-    width:10px;
-    height:20px;
-    border-bottom:5px solid #f8f8f8;
-    border-right:5px solid #f8f8f8;
-    background:#f8f8f8;
-    left:98%;
-    margin-left:-5px; 
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    transform:rotate(45deg);
-} */
 
 .bubble {
     position: absolute;
