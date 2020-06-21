@@ -9,25 +9,33 @@ body {
 
 }
 
+.highlight {
+    color: hsl(243, 100%, 93%);
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    /* border: 5px solid red; */
     
 }
 
 .main {
     display: flex;
+    border: 5px solid red;
+    min-width: 500px;
+    flex-wrap: wrap;
 }
 
 header {
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 70px 10px 10px;
     padding: 30px 120px 30px 30px;
-    max-width: 180px;
     margin: 10px;
+    max-width: 180px;
     display: flex;
     /* border: 5px solid red; */
     flex-wrap: wrap;
@@ -53,6 +61,48 @@ header > * {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+main {
+    border: 5px solid goldenrod;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
+    margin: 50px 10px 10px 10px;
+}
+
+main > * {
+    /* border: 5px solid red; */
+}
+
+.storage-empty {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 20px;
+    margin: 15px 0 5px 0;
+    height: 20px;
+}
+
+.storage-used {
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 20px;
+    height: 20px;
+    width: calc((815/1000)*100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.circle-indicator {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.storage-label {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
